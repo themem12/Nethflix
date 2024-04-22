@@ -217,10 +217,10 @@
 		7BF8525A2BCDBA5500087454 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				7BD13B1A2BD3361C00F2192B /* Mocks.swift */,
 				7BF8525B2BCDBA6A00087454 /* SmallVerticalButton.swift */,
 				7BF8525D2BCE622500087454 /* LargeButton.swift */,
 				7BD13B1C2BD336CE00F2192B /* VideoPlayer */,
-				7BD13B1A2BD3361C00F2192B /* Mocks.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
