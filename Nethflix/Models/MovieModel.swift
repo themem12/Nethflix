@@ -30,6 +30,8 @@ struct MovieModel: Identifiable {
 
     var promotionalHeadline: String?
     
+    var trailers: [TrailerModel]
+    
     var numberOfSeasonsDisplay: String {
         if let num = numberOfSeasons {
             if num == 1 {
@@ -77,7 +79,8 @@ let mockMovie1 = MovieModel(
     defaultEpisodeInfo: mockEpisodeInfo1,
     creators: "",
     cast: "",
-    moreLikeThis: mockMoreLikeThisList
+    moreLikeThis: mockMoreLikeThisList, 
+    trailers: mockTrailerList
 )
 
 let mockMovie2 = MovieModel(
@@ -90,7 +93,8 @@ let mockMovie2 = MovieModel(
     defaultEpisodeInfo: mockEpisodeInfo1,
     creators: "Baran bo Odar, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, jordis triebel",
-    moreLikeThis: mockMoreLikeThisList
+    moreLikeThis: mockMoreLikeThisList,
+    trailers: mockTrailerList
 )
 let mockMovie3 = MovieModel(
     id: UUID().uuidString,
@@ -102,7 +106,8 @@ let mockMovie3 = MovieModel(
     defaultEpisodeInfo: mockEpisodeInfo1,
     creators: "Baran bo Odar, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, jordis triebel",
-    moreLikeThis: mockMoreLikeThisList
+    moreLikeThis: mockMoreLikeThisList,
+    trailers: mockTrailerList
 )
 let mockMovie4 = MovieModel(
     id: UUID().uuidString,
@@ -114,7 +119,8 @@ let mockMovie4 = MovieModel(
     defaultEpisodeInfo: mockEpisodeInfo1,
     creators: "Baran bo Odar, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, jordis triebel",
-    moreLikeThis: mockMoreLikeThisList
+    moreLikeThis: mockMoreLikeThisList,
+    trailers: mockTrailerList
 )
 let mockMovie5 = MovieModel(
     id: UUID().uuidString,
@@ -126,7 +132,8 @@ let mockMovie5 = MovieModel(
     defaultEpisodeInfo: mockEpisodeInfo1,
     creators: "Baran bo Odar, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, jordis triebel",
-    moreLikeThis: mockMoreLikeThisList
+    moreLikeThis: mockMoreLikeThisList,
+    trailers: mockTrailerList
 )
 let mockMovie6 = MovieModel(
     id: UUID().uuidString,
@@ -138,7 +145,8 @@ let mockMovie6 = MovieModel(
     defaultEpisodeInfo: mockEpisodeInfo1,
     creators: "Baran bo Odar, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, jordis triebel",
-    moreLikeThis: mockMoreLikeThisList
+    moreLikeThis: mockMoreLikeThisList,
+    trailers: mockTrailerList
 )
 
 let mockSerie = MovieModel(
@@ -153,7 +161,8 @@ let mockSerie = MovieModel(
     creators: "Baran bo Odar, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, jordis triebel",
     moreLikeThis: mockMoreLikeThisList,
-    promotionalHeadline: "Watch season 3 now!"
+    promotionalHeadline: "Watch season 3 now!",
+    trailers: mockTrailerList
 )
 
 let mockMovie7 = MovieModel(
@@ -166,7 +175,8 @@ let mockMovie7 = MovieModel(
     defaultEpisodeInfo: mockEpisodeInfo1,
     creators: "",
     cast: "",
-    moreLikeThis: []
+    moreLikeThis: [],
+    trailers: mockTrailerList
 )
 
 let mockMovie8 = MovieModel(
@@ -179,7 +189,8 @@ let mockMovie8 = MovieModel(
     defaultEpisodeInfo: mockEpisodeInfo1,
     creators: "",
     cast: "",
-    moreLikeThis: []
+    moreLikeThis: [],
+    trailers: mockTrailerList
 )
 let mockMovie9 = MovieModel(
     id: UUID().uuidString,
@@ -191,7 +202,8 @@ let mockMovie9 = MovieModel(
     defaultEpisodeInfo: mockEpisodeInfo1,
     creators: "",
     cast: "",
-    moreLikeThis: []
+    moreLikeThis: [],
+    trailers: mockTrailerList
 )
 let mockMovie10 = MovieModel(
     id: UUID().uuidString,
@@ -203,7 +215,8 @@ let mockMovie10 = MovieModel(
     defaultEpisodeInfo: mockEpisodeInfo1,
     creators: "",
     cast: "",
-    moreLikeThis: []
+    moreLikeThis: [],
+    trailers: mockTrailerList
 )
 let mockMovie11 = MovieModel(
     id: UUID().uuidString,
@@ -215,7 +228,8 @@ let mockMovie11 = MovieModel(
     defaultEpisodeInfo: mockEpisodeInfo1,
     creators: "",
     cast: "",
-    moreLikeThis: []
+    moreLikeThis: [],
+    trailers: mockTrailerList
 )
 let mockMovie12 = MovieModel(
     id: UUID().uuidString,
@@ -227,7 +241,8 @@ let mockMovie12 = MovieModel(
     defaultEpisodeInfo: mockEpisodeInfo1,
     creators: "",
     cast: "",
-    moreLikeThis: []
+    moreLikeThis: [],
+    trailers: mockTrailerList
 )
 
 let mockMovieList = [mockMovie1, mockMovie2, mockMovie3, mockMovie4, mockMovie5, mockMovie6]

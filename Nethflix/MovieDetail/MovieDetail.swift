@@ -63,7 +63,7 @@ struct MovieDetail: View {
                         }
                         .padding(.leading, 20)
                         
-//                        CustomTabSwitcher()
+//                        CustomTabSwitcher(tabs: [], movie: movie)
                     }
                 }
             }
