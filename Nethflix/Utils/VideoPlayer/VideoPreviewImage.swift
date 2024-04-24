@@ -19,7 +19,7 @@ struct VideoPreviewImage: View {
 //            KFImage(imageURL)
             Image("placeholder-movie")
                 .resizable()
-                .aspectRatio(contentMode: .fit)
+                .aspectRatio(contentMode: .fill)
             Button(action: {
                 showingVideoPlayer = true
             }, label: {

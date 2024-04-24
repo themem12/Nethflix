@@ -13,6 +13,9 @@ struct CustomTabSwitcher: View {
     
     @State private var currentTab: CustomTab = .episodes
     
+    @Binding var showSeasonPicker: Bool
+    @Binding var selectedSeason: Int
+    
     var body: some View {
         VStack {
             ScrollView(.horizontal, showsIndicators: false) {
@@ -38,7 +41,7 @@ struct CustomTabSwitcher: View {
             
             switch currentTab {
             case .episodes:
-                Text("Episodes")
+                EpisodesView(episodes: movie.episodes ?? [], showSeasonPicker: $showSeasonPicker, selectedSeason: $selectedSeason)
             case .trailers:
                 TrailerList(trailers: movie.trailers)
             case .more:
@@ -60,6 +63,11 @@ enum CustomTab: String {
     ZStack {
         Color.black
             .ignoresSafeArea()
-        CustomTabSwitcher(tabs: CustomTab.mockTabs, movie: mockMovie3)
+        CustomTabSwitcher(
+            tabs: CustomTab.mockTabs,
+            movie: mockSerie,
+            showSeasonPicker: .constant(false),
+            selectedSeason: .constant(1)
+        )
     }
 }

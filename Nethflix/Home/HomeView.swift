@@ -12,6 +12,8 @@ struct HomeView: View {
     var viewModel: HomeViewModel = HomeViewModel()
     let screen = UIScreen.main.bounds
     
+    @State private var movieDetailToShow: MovieModel? = nil
+    
     var body: some View {
         ZStack {
             Color.black
@@ -46,6 +48,9 @@ struct HomeView: View {
                                         StandarHomeMovie(movie: movie)
                                             .frame(width: 110, height: 200)
                                             .padding(.horizontal, 10)
+                                            .onTapGesture {
+                                                movieDetailToShow = movie
+                                            }
                                     }
                                 }
                             }
@@ -53,8 +58,17 @@ struct HomeView: View {
                     }
                 }
             }
-        }.foregroundColor(.white)
-            .ignoresSafeArea([.all])
+            if let movie = movieDetailToShow {
+                MovieDetail(
+                    movie: movie,
+                    movieDetailToShow: $movieDetailToShow
+                )
+                .animation(.easeIn)
+                .transition(.opacity)
+            }
+        }
+        .foregroundColor(.white)
+        .ignoresSafeArea()
     }
 }
 

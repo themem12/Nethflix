@@ -31,6 +31,7 @@
 		7BD13B202BD3457800F2192B /* TrailerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD13B1F2BD3457800F2192B /* TrailerList.swift */; };
 		7BF8525C2BCDBA6A00087454 /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF8525B2BCDBA6A00087454 /* SmallVerticalButton.swift */; };
 		7BF8525E2BCE622500087454 /* LargeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF8525D2BCE622500087454 /* LargeButton.swift */; };
+		7BFEB4362BD729E200A18C6E /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFEB4352BD729E200A18C6E /* EpisodesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		7BD13B1F2BD3457800F2192B /* TrailerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerList.swift; sourceTree = "<group>"; };
 		7BF8525B2BCDBA6A00087454 /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
 		7BF8525D2BCE622500087454 /* LargeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeButton.swift; sourceTree = "<group>"; };
+		7BFEB4352BD729E200A18C6E /* EpisodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				7B3F1EE12BD321A10085D472 /* CustomTabSwitcher.swift */,
 				7B3F1EE32BD32D660085D472 /* MoreLikeThis.swift */,
 				7BD13B1F2BD3457800F2192B /* TrailerList.swift */,
+				7BFEB4352BD729E200A18C6E /* EpisodesView.swift */,
 			);
 			path = MovieDetail;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BFEB4362BD729E200A18C6E /* EpisodesView.swift in Sources */,
 				7B3F1EE42BD32D660085D472 /* MoreLikeThis.swift in Sources */,
 				7BB24C852BC9D6B500973FD2 /* MovieModel.swift in Sources */,
 				7B50673C2BC9DC3600E67C77 /* HomeViewModel.swift in Sources */,
