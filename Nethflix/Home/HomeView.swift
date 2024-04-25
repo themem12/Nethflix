@@ -41,7 +41,7 @@ struct HomeView: View {
                             showTopRowSelection: $showTopRowSelection
                         )
                         .padding(.top, 40)
-                    }
+                    }.padding(.top, -60)
                     
                     Spacer(minLength: 24)
                     
@@ -64,7 +64,7 @@ struct HomeView: View {
             
             if showTopRowSelection {
                 Group {
-                    Color.black.opacity(0.8)
+                    Color.black.opacity(0.9)
                     VStack(spacing: 40) {
                         Spacer()
                         ForEach(HomeTopRow.allCases, id: \.self) { topRow in
@@ -91,11 +91,12 @@ struct HomeView: View {
                     }
                 }
                 .ignoresSafeArea()
+                .toolbar(.hidden, for: .tabBar)
             }
             
             if showGenreSelection {
                 Group {
-                    Color.black.opacity(0.8)
+                    Color.black.opacity(0.9)
                     VStack {
                         Spacer()
                         ScrollView {
@@ -124,11 +125,12 @@ struct HomeView: View {
                         .padding(.bottom, 30)
                     }.padding(.top, 50)
                 }
+                .ignoresSafeArea()
+                .toolbar(.hidden, for: .tabBar)
             }
             
         }
         .foregroundColor(.white)
-        .ignoresSafeArea()
     }
 }
 
