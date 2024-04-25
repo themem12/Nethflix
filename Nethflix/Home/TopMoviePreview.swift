@@ -12,9 +12,12 @@ struct TopMoviePreview: View {
     var movie: MovieModel
     var body: some View {
         ZStack {
-            Image("placeholder-movie-v")
-                .resizable()
+            ZStack {
+                Image("placeholder-movie-v")
+                    .resizable()
                 .scaledToFit()
+                movie.backgroundColor.opacity(0.6)
+            }
             VStack {
                 Spacer()
                 HStack {

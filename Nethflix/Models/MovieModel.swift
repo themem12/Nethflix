@@ -6,12 +6,14 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct MovieModel: Identifiable {
     var id: String
     var name: String
     var thumbnailURL: URL
     var categories: [String]
+    var genre: HomeGenre = .AllGenres
     
     //Movie Detail View
     var year: Int
@@ -31,6 +33,8 @@ struct MovieModel: Identifiable {
     var promotionalHeadline: String?
     
     var trailers: [TrailerModel]
+    
+    var backgroundColor: Color
     
     var numberOfSeasonsDisplay: String {
         if let num = numberOfSeasons {
@@ -58,6 +62,10 @@ struct MovieModel: Identifiable {
             return defaultEpisodeInfo.description
         }
     }
+    
+    var mediaType: MediaType {
+        return episodes == nil ? .movie : .tvShow
+    }
 }
 
 struct CurrentEpisodeInfo: Hashable, Equatable {
@@ -65,4 +73,9 @@ struct CurrentEpisodeInfo: Hashable, Equatable {
     var description: String
     var season: Int
     var episode: Int
+}
+
+enum MediaType {
+    case movie
+    case tvShow
 }

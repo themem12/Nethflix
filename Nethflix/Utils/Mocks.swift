@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 let mockVideoURL = URL(string: "https://www.radiantmediaplayer.com/media/big-buck-bunny-360p.mp4")!
 let mockImageURL = URL(string: "https://picsum.photos/300/100")!
@@ -29,7 +30,8 @@ let mockMovie1 = MovieModel(
     creators: "",
     cast: "",
     moreLikeThis: mockMoreLikeThisList,
-    trailers: mockTrailerList
+    trailers: mockTrailerList,
+    backgroundColor: .black
 )
 
 let mockMovie2 = MovieModel(
@@ -43,7 +45,8 @@ let mockMovie2 = MovieModel(
     creators: "Baran bo Odar, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, jordis triebel",
     moreLikeThis: mockMoreLikeThisList,
-    trailers: mockTrailerList
+    trailers: mockTrailerList,
+    backgroundColor: .blue
 )
 let mockMovie3 = MovieModel(
     id: UUID().uuidString,
@@ -56,7 +59,8 @@ let mockMovie3 = MovieModel(
     creators: "Baran bo Odar, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, jordis triebel",
     moreLikeThis: mockMoreLikeThisList,
-    trailers: mockTrailerList
+    trailers: mockTrailerList,
+    backgroundColor: .brown
 )
 let mockMovie4 = MovieModel(
     id: UUID().uuidString,
@@ -69,7 +73,8 @@ let mockMovie4 = MovieModel(
     creators: "Baran bo Odar, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, jordis triebel",
     moreLikeThis: mockMoreLikeThisList,
-    trailers: mockTrailerList
+    trailers: mockTrailerList,
+    backgroundColor: .red
 )
 let mockMovie5 = MovieModel(
     id: UUID().uuidString,
@@ -82,7 +87,8 @@ let mockMovie5 = MovieModel(
     creators: "Baran bo Odar, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, jordis triebel",
     moreLikeThis: mockMoreLikeThisList,
-    trailers: mockTrailerList
+    trailers: mockTrailerList,
+    backgroundColor: .yellow
 )
 let mockMovie6 = MovieModel(
     id: UUID().uuidString,
@@ -95,7 +101,8 @@ let mockMovie6 = MovieModel(
     creators: "Baran bo Odar, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, jordis triebel",
     moreLikeThis: mockMoreLikeThisList,
-    trailers: mockTrailerList
+    trailers: mockTrailerList,
+    backgroundColor: .purple
 )
 
 let mockSerie = MovieModel(
@@ -112,7 +119,8 @@ let mockSerie = MovieModel(
     moreLikeThis: mockMoreLikeThisList,
     episodes: mockCompleteEpisodes,
     promotionalHeadline: "Watch season 3 now!",
-    trailers: mockTrailerList
+    trailers: mockTrailerList,
+    backgroundColor: .cyan
 )
 
 let mockMovie7 = MovieModel(
@@ -126,7 +134,8 @@ let mockMovie7 = MovieModel(
     creators: "",
     cast: "",
     moreLikeThis: [],
-    trailers: mockTrailerList
+    trailers: mockTrailerList,
+    backgroundColor: .green
 )
 
 let mockMovie8 = MovieModel(
@@ -140,7 +149,8 @@ let mockMovie8 = MovieModel(
     creators: "",
     cast: "",
     moreLikeThis: [],
-    trailers: mockTrailerList
+    trailers: mockTrailerList,
+    backgroundColor: .indigo
 )
 let mockMovie9 = MovieModel(
     id: UUID().uuidString,
@@ -153,7 +163,8 @@ let mockMovie9 = MovieModel(
     creators: "",
     cast: "",
     moreLikeThis: [],
-    trailers: mockTrailerList
+    trailers: mockTrailerList,
+    backgroundColor: .mint
 )
 let mockMovie10 = MovieModel(
     id: UUID().uuidString,
@@ -166,7 +177,8 @@ let mockMovie10 = MovieModel(
     creators: "",
     cast: "",
     moreLikeThis: [],
-    trailers: mockTrailerList
+    trailers: mockTrailerList,
+    backgroundColor: .orange
 )
 let mockMovie11 = MovieModel(
     id: UUID().uuidString,
@@ -179,7 +191,8 @@ let mockMovie11 = MovieModel(
     creators: "",
     cast: "",
     moreLikeThis: [],
-    trailers: mockTrailerList
+    trailers: mockTrailerList,
+    backgroundColor: .pink
 )
 let mockMovie12 = MovieModel(
     id: UUID().uuidString,
@@ -192,10 +205,11 @@ let mockMovie12 = MovieModel(
     creators: "",
     cast: "",
     moreLikeThis: [],
-    trailers: mockTrailerList
+    trailers: mockTrailerList,
+    backgroundColor: .teal
 )
 
-let mockMovieList = [mockMovie1, mockMovie2, mockMovie3, mockMovie4, mockMovie5, mockMovie6]
+let mockMovieList = [mockMovie1, mockMovie2, mockMovie3, mockMovie4, mockMovie5, mockMovie6, mockSerie]
 var mockMoreLikeThisList: [MovieModel] {
     return [mockMovie7, mockMovie8, mockMovie9, mockMovie10, mockMovie11, mockMovie12].shuffled()
 }

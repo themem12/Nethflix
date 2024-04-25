@@ -14,12 +14,27 @@ class HomeViewModel: ObservableObject {
         movies.keys.map({ String($0) })
     }
     
+    public var allGenre: [HomeGenre] = [.AllGenres, .Action, .Comedy, .Horror, .Thriller]
+    
     init() {
         setupMovies()
     }
     
-    public func getMovie(for category: String) -> [MovieModel] {
-        movies[category] ?? []
+    public func getMovie(
+        for category: String,
+        andHomeRow: HomeTopRow,
+        andGenre genre: HomeGenre
+    ) -> [MovieModel] {
+        switch andHomeRow {
+        case .home:
+            return movies[category] ?? []
+        case .tvShows:
+            return (movies[category] ?? []).filter({ $0.mediaType == .tvShow && $0.genre == genre })
+        case .movies:
+            return (movies[category] ?? []).filter({ $0.mediaType == .movie && $0.genre == genre })
+        case .myList:
+            return []
+        }
     }
     
     private func setupMovies() {
