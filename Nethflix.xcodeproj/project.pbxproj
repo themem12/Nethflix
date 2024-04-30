@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B2AE78D2BDB677C00BCFB96 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2AE78C2BDB677C00BCFB96 /* SearchBar.swift */; };
+		7B2AE7912BDB6D3200BCFB96 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2AE7902BDB6D3200BCFB96 /* ActivityIndicator.swift */; };
+		7B2AE7932BDB784C00BCFB96 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2AE7922BDB784C00BCFB96 /* View+Extensions.swift */; };
 		7B3F1EE22BD321A10085D472 /* CustomTabSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3F1EE12BD321A10085D472 /* CustomTabSwitcher.swift */; };
 		7B3F1EE42BD32D660085D472 /* MoreLikeThis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3F1EE32BD32D660085D472 /* MoreLikeThis.swift */; };
 		7B50673C2BC9DC3600E67C77 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B50673B2BC9DC3600E67C77 /* HomeViewModel.swift */; };
@@ -53,6 +56,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B2AE78C2BDB677C00BCFB96 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		7B2AE7902BDB6D3200BCFB96 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		7B2AE7922BDB784C00BCFB96 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		7B3F1EE12BD321A10085D472 /* CustomTabSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabSwitcher.swift; sourceTree = "<group>"; };
 		7B3F1EE32BD32D660085D472 /* MoreLikeThis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreLikeThis.swift; sourceTree = "<group>"; };
 		7B50673B2BC9DC3600E67C77 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -109,6 +115,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B2AE78B2BDB676B00BCFB96 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				7B2AE78C2BDB677C00BCFB96 /* SearchBar.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		7B50673D2BCA191600E67C77 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +180,7 @@
 				7BF8525A2BCDBA5500087454 /* Utils */,
 				7B9806D52BCF4FEA00DE686A /* MovieDetail */,
 				7BB24C7E2BC9A91300973FD2 /* Home */,
+				7B2AE78B2BDB676B00BCFB96 /* Search */,
 				7BB24C542BC9A7A600973FD2 /* NethflixApp.swift */,
 				7BB24C562BC9A7A600973FD2 /* ContentView.swift */,
 				7BB24C582BC9A7B000973FD2 /* Assets.xcassets */,
@@ -227,6 +242,8 @@
 				7BF8525B2BCDBA6A00087454 /* SmallVerticalButton.swift */,
 				7BF8525D2BCE622500087454 /* LargeButton.swift */,
 				7BD13B1C2BD336CE00F2192B /* VideoPlayer */,
+				7B2AE7902BDB6D3200BCFB96 /* ActivityIndicator.swift */,
+				7B2AE7922BDB784C00BCFB96 /* View+Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -375,13 +392,16 @@
 				7BABED672BCA2092002C4BE9 /* TopMoviePreview.swift in Sources */,
 				7BD13B1E2BD3370A00F2192B /* VideoPreviewImage.swift in Sources */,
 				7BF8525C2BCDBA6A00087454 /* SmallVerticalButton.swift in Sources */,
+				7B2AE7932BDB784C00BCFB96 /* View+Extensions.swift in Sources */,
 				7BD13B172BD335BD00F2192B /* TrailerModel.swift in Sources */,
 				7BB24C802BC9A92500973FD2 /* HomeView.swift in Sources */,
 				7B3F1EE22BD321A10085D472 /* CustomTabSwitcher.swift in Sources */,
 				7B9806DA2BCF53F600DE686A /* EpisodeModel.swift in Sources */,
 				7BD13B192BD3360400F2192B /* SwiftUIVideoView.swift in Sources */,
 				7BC6989E2BD9D2EB00057B90 /* HomeStack.swift in Sources */,
+				7B2AE78D2BDB677C00BCFB96 /* SearchBar.swift in Sources */,
 				7BB24C572BC9A7A600973FD2 /* ContentView.swift in Sources */,
+				7B2AE7912BDB6D3200BCFB96 /* ActivityIndicator.swift in Sources */,
 				7BD13B202BD3457800F2192B /* TrailerList.swift in Sources */,
 				7BB24C552BC9A7A600973FD2 /* NethflixApp.swift in Sources */,
 				7B9806D72BCF500500DE686A /* MovieDetail.swift in Sources */,
