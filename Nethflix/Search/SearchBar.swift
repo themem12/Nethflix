@@ -25,7 +25,6 @@ struct SearchBar: View {
                         .padding(.leading, 10)
                     
                     TextField("Search", text: $text)
-                        .background(Color.graySearchBackground)
                         .clipShape(RoundedRectangle(cornerRadius: 8))
                         .foregroundColor(.white)
                         .padding(7)
@@ -33,6 +32,7 @@ struct SearchBar: View {
                         .onTapGesture(perform: {
                             isEditing = true
                         })
+                        .animation(.easeIn, value: 1)
                     if isEditing && text != "" {
                         if isLoading {
                             ProgressView()
@@ -64,6 +64,8 @@ struct SearchBar: View {
                     Text("Cancel")
                         .foregroundColor(.white)
                 })
+                .transition(.move(edge: .trailing))
+                .animation(.easeIn, value: 1)
             }
         }
     }

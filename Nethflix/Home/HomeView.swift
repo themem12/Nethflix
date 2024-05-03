@@ -234,4 +234,20 @@ enum HomeGenre: String {
     case Comedy
     case Horror
     case Thriller
+    
+    static func random() -> HomeGenre {
+        let random = Int.random(in: 1..<6)
+        switch random {
+        case 2:
+            return .Action
+        case 3:
+            return .Comedy
+        case 4:
+            return .Horror
+        case 5:
+            return .Thriller
+        default:
+            return .AllGenres
+        }
+    }
 }

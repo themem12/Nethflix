@@ -10,15 +10,12 @@ import Kingfisher
 
 struct StandarHomeMovie: View {
     var movie: MovieModel
-    var delta: CGFloat {
-        CGFloat.random(in: -10..<10)
-    }
     
     var body: some View {
         ZStack {
             Image("placeholder-movie-v")
                 .resizable()
-            .scaledToFill()
+                .scaledToFill()
             movie.backgroundColor.opacity(0.7)
         }
 //        KFImage(movie.thumbnailURL)
