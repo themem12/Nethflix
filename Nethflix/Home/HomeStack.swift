@@ -24,20 +24,20 @@ struct HomeStack: View {
                         .font(.title3)
                         .bold()
                     Spacer()
-                }
+                }.padding(.leading, 8)
+                
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
                         ForEach(viewModel.getMovie(for: category, andHomeRow: topBarSelection, andGenre: selectedGenre)) { movie in
                             StandarHomeMovie(movie: movie)
-                                .frame(width: 110, height: 200)
-                                .padding(.horizontal, 10)
+                                .frame(width: 135, height: 200)
                                 .onTapGesture {
                                     movieDetailToShow = movie
                                 }
                         }
                     }
                 }
-            }
+            }.padding(.leading, 8)
         }
     }
 }
