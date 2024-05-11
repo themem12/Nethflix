@@ -39,6 +39,11 @@
 		7BD13B202BD3457800F2192B /* TrailerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD13B1F2BD3457800F2192B /* TrailerList.swift */; };
 		7BF8525C2BCDBA6A00087454 /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF8525B2BCDBA6A00087454 /* SmallVerticalButton.swift */; };
 		7BF8525E2BCE622500087454 /* LargeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF8525D2BCE622500087454 /* LargeButton.swift */; };
+		7BFB7B8C2BF00AAF00548D93 /* ComingSoonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFB7B8B2BF00AAF00548D93 /* ComingSoonView.swift */; };
+		7BFB7B8E2BF00AF000548D93 /* NotificationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFB7B8D2BF00AF000548D93 /* NotificationBar.swift */; };
+		7BFB7B902BF00D3000548D93 /* ComingSoonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFB7B8F2BF00D3000548D93 /* ComingSoonRow.swift */; };
+		7BFB7B922BF0139100548D93 /* ComingSoonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFB7B912BF0139100548D93 /* ComingSoonViewModel.swift */; };
+		7BFB7B942BF0166A00548D93 /* TrackableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFB7B932BF0166A00548D93 /* TrackableScrollView.swift */; };
 		7BFEB4362BD729E200A18C6E /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFEB4352BD729E200A18C6E /* EpisodesView.swift */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +99,11 @@
 		7BD13B1F2BD3457800F2192B /* TrailerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerList.swift; sourceTree = "<group>"; };
 		7BF8525B2BCDBA6A00087454 /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
 		7BF8525D2BCE622500087454 /* LargeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeButton.swift; sourceTree = "<group>"; };
+		7BFB7B8B2BF00AAF00548D93 /* ComingSoonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonView.swift; sourceTree = "<group>"; };
+		7BFB7B8D2BF00AF000548D93 /* NotificationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationBar.swift; sourceTree = "<group>"; };
+		7BFB7B8F2BF00D3000548D93 /* ComingSoonRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonRow.swift; sourceTree = "<group>"; };
+		7BFB7B912BF0139100548D93 /* ComingSoonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonViewModel.swift; sourceTree = "<group>"; };
+		7BFB7B932BF0166A00548D93 /* TrackableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackableScrollView.swift; sourceTree = "<group>"; };
 		7BFEB4352BD729E200A18C6E /* EpisodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,6 +203,7 @@
 				7B9806D52BCF4FEA00DE686A /* MovieDetail */,
 				7BB24C7E2BC9A91300973FD2 /* Home */,
 				7B2AE78B2BDB676B00BCFB96 /* Search */,
+				7BFB7B8A2BF00A8600548D93 /* ComingSoon */,
 				7BB24C542BC9A7A600973FD2 /* NethflixApp.swift */,
 				7BB24C562BC9A7A600973FD2 /* ContentView.swift */,
 				7BB24C582BC9A7B000973FD2 /* Assets.xcassets */,
@@ -258,6 +269,18 @@
 				7BBE02A32BE09DD400BA8953 /* MoviesGenerator.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		7BFB7B8A2BF00A8600548D93 /* ComingSoon */ = {
+			isa = PBXGroup;
+			children = (
+				7BFB7B8B2BF00AAF00548D93 /* ComingSoonView.swift */,
+				7BFB7B8D2BF00AF000548D93 /* NotificationBar.swift */,
+				7BFB7B8F2BF00D3000548D93 /* ComingSoonRow.swift */,
+				7BFB7B912BF0139100548D93 /* ComingSoonViewModel.swift */,
+				7BFB7B932BF0166A00548D93 /* TrackableScrollView.swift */,
+			);
+			path = ComingSoon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,9 +426,13 @@
 				7B50673C2BC9DC3600E67C77 /* HomeViewModel.swift in Sources */,
 				7BBE02A02BE09B3500BA8953 /* SearchView.swift in Sources */,
 				7BD13B1B2BD3361C00F2192B /* Mocks.swift in Sources */,
+				7BFB7B942BF0166A00548D93 /* TrackableScrollView.swift in Sources */,
 				7BABED672BCA2092002C4BE9 /* TopMoviePreview.swift in Sources */,
 				7BD13B1E2BD3370A00F2192B /* VideoPreviewImage.swift in Sources */,
 				7BBE02A42BE09DD400BA8953 /* MoviesGenerator.swift in Sources */,
+				7BFB7B902BF00D3000548D93 /* ComingSoonRow.swift in Sources */,
+				7BFB7B8C2BF00AAF00548D93 /* ComingSoonView.swift in Sources */,
+				7BFB7B922BF0139100548D93 /* ComingSoonViewModel.swift in Sources */,
 				7BF8525C2BCDBA6A00087454 /* SmallVerticalButton.swift in Sources */,
 				7B2AE7932BDB784C00BCFB96 /* View+Extensions.swift in Sources */,
 				7BD13B172BD335BD00F2192B /* TrailerModel.swift in Sources */,
@@ -418,6 +445,7 @@
 				7BB24C572BC9A7A600973FD2 /* ContentView.swift in Sources */,
 				7BD13B202BD3457800F2192B /* TrailerList.swift in Sources */,
 				7BA6DEA92BE464B000754BF2 /* SearchResultsGrid.swift in Sources */,
+				7BFB7B8E2BF00AF000548D93 /* NotificationBar.swift in Sources */,
 				7BB24C552BC9A7A600973FD2 /* NethflixApp.swift in Sources */,
 				7BBE02A22BE09B6400BA8953 /* SearchViewModel.swift in Sources */,
 				7B9806D72BCF500500DE686A /* MovieDetail.swift in Sources */,
