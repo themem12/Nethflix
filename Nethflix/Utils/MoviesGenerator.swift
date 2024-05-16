@@ -30,7 +30,8 @@ func generateMovies(_ count: Int) -> [MovieModel] {
             moreLikeThis: mockMoreLikeThisList,
             episodes: randomEpisodesList(numberOfSeasons),
             promotionalHeadline: randomHeadline(),
-            trailers: randomTrailers(),
+            trailers: randomTrailers(), 
+            previewImage: "",
             backgroundColor: randomColor()
         )
         

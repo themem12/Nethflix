@@ -31,7 +31,9 @@ let mockMovie1 = MovieModel(
     cast: "",
     moreLikeThis: mockMoreLikeThisList,
     trailers: mockTrailerList,
-    backgroundColor: .black
+    previewImage: "whiteLinesPreview",
+    previewVideo: mockVideoURL,
+    backgroundColor: .purple
 )
 
 let mockMovie2 = MovieModel(
@@ -46,6 +48,8 @@ let mockMovie2 = MovieModel(
     cast: "Louis Hofmann, Oliver Masucci, jordis triebel",
     moreLikeThis: mockMoreLikeThisList,
     trailers: mockTrailerList,
+    previewImage: "arrestedDevPreview",
+    previewVideo: mockVideoURL,
     backgroundColor: .blue
 )
 let mockMovie3 = MovieModel(
@@ -60,6 +64,8 @@ let mockMovie3 = MovieModel(
     cast: "Louis Hofmann, Oliver Masucci, jordis triebel",
     moreLikeThis: mockMoreLikeThisList,
     trailers: mockTrailerList,
+    previewImage: "travelersPreview",
+    previewVideo: mockVideoURL,
     backgroundColor: .brown
 )
 let mockMovie4 = MovieModel(
@@ -74,6 +80,8 @@ let mockMovie4 = MovieModel(
     cast: "Louis Hofmann, Oliver Masucci, jordis triebel",
     moreLikeThis: mockMoreLikeThisList,
     trailers: mockTrailerList,
+    previewImage: "dirtyJohnPreview",
+    previewVideo: mockVideoURL,
     backgroundColor: .red
 )
 let mockMovie5 = MovieModel(
@@ -88,6 +96,8 @@ let mockMovie5 = MovieModel(
     cast: "Louis Hofmann, Oliver Masucci, jordis triebel",
     moreLikeThis: mockMoreLikeThisList,
     trailers: mockTrailerList,
+    previewImage: "darkPreview",
+    previewVideo: mockVideoURL,
     backgroundColor: .yellow
 )
 let mockMovie6 = MovieModel(
@@ -102,6 +112,8 @@ let mockMovie6 = MovieModel(
     cast: "Louis Hofmann, Oliver Masucci, jordis triebel",
     moreLikeThis: mockMoreLikeThisList,
     trailers: mockTrailerList,
+    previewImage: "whiteLinesPreview",
+    previewVideo: mockVideoURL,
     backgroundColor: .purple
 )
 
@@ -120,6 +132,7 @@ let mockSerie = MovieModel(
     episodes: mockCompleteEpisodes,
     promotionalHeadline: "Watch season 3 now!",
     trailers: mockTrailerList,
+    previewImage: "arrestedDevPreview",
     backgroundColor: .cyan
 )
 
@@ -135,6 +148,7 @@ let mockMovie7 = MovieModel(
     cast: "",
     moreLikeThis: [],
     trailers: mockTrailerList,
+    previewImage: "travelersPreview",
     backgroundColor: .green
 )
 
@@ -150,6 +164,7 @@ let mockMovie8 = MovieModel(
     cast: "",
     moreLikeThis: [],
     trailers: mockTrailerList,
+    previewImage: "dirtyJohnPreview",
     backgroundColor: .indigo
 )
 let mockMovie9 = MovieModel(
@@ -164,6 +179,7 @@ let mockMovie9 = MovieModel(
     cast: "",
     moreLikeThis: [],
     trailers: mockTrailerList,
+    previewImage: "darkPreview",
     backgroundColor: .mint
 )
 let mockMovie10 = MovieModel(
@@ -178,6 +194,7 @@ let mockMovie10 = MovieModel(
     cast: "",
     moreLikeThis: [],
     trailers: mockTrailerList,
+    previewImage: "whiteLinesPreview",
     backgroundColor: .orange
 )
 let mockMovie11 = MovieModel(
@@ -192,6 +209,7 @@ let mockMovie11 = MovieModel(
     cast: "",
     moreLikeThis: [],
     trailers: mockTrailerList,
+    previewImage: "arrestedDevPreview",
     backgroundColor: .pink
 )
 let mockMovie12 = MovieModel(
@@ -206,6 +224,7 @@ let mockMovie12 = MovieModel(
     cast: "",
     moreLikeThis: [],
     trailers: mockTrailerList,
+    previewImage: "travelersPreview",
     backgroundColor: .teal
 )
 

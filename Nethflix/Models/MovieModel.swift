@@ -34,6 +34,9 @@ struct MovieModel: Identifiable {
     
     var trailers: [TrailerModel]
     
+    var previewImage: String
+    var previewVideo: URL?
+    
     var backgroundColor: Color
     
     var numberOfSeasonsDisplay: String {
