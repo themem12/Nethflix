@@ -14,6 +14,8 @@ struct PreviewList: View {
     @Binding var isVisible: Bool
     @State private var currentTranslation: CGFloat = 0
     
+    let externalDragGesture: _EndedGesture<_ChangedGesture<DragGesture>>
+    
     let screen = UIScreen.main.bounds
     
     func shouldPlayVideo(index: Int) -> Bool {
@@ -30,7 +32,8 @@ struct PreviewList: View {
             PagerView(
                 pageCount: movies.count,
                 currentIndex: $currentIndex,
-                translation: $currentTranslation) {
+                translation: $currentTranslation,
+                externalDragGesture: externalDragGesture) {
                     ForEach(0..<movies.count) { movieIndex in
                         let movie = movies[movieIndex]
                         PreviewView(
@@ -45,18 +48,19 @@ struct PreviewList: View {
     }
 }
 
-struct DummyPreviewList: View {
-    @State private var currentIndex: Int = 0
-    @State private var isVisible: Bool = true
-    var body: some View {
-        PreviewList(
-            movies: mockMovieList,
-            currentIndex: $currentIndex,
-            isVisible: $isVisible
-        )
-    }
-}
-
-#Preview {
-    DummyPreviewList()
-}
+//struct DummyPreviewList: View {
+//    @State private var currentIndex: Int = 0
+//    @State private var isVisible: Bool = true
+//    var body: some View {
+//        PreviewList(
+//            movies: mockMovieList,
+//            currentIndex: $currentIndex,
+//            isVisible: $isVisible, 
+//            externalDragGesture: 
+//        )
+//    }
+//}
+//
+//#Preview {
+//    DummyPreviewList()
+//}
